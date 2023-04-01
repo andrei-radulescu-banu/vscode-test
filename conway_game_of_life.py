@@ -33,11 +33,6 @@ for row in range(SIZE):
 for row in range(SIZE):
     for column in range(SIZE):
         grid[row][column] = random.randint(0, 1)
-#grid[1][1]=1
-#grid[1][2]=1
-#grid[1][3]=1
-#grid[2][1]=1
-
 
 # Initialize pygame
 pygame.init()
@@ -122,7 +117,7 @@ while not done:
                 new_grid[row][column] = 1
 
     grid = new_grid
-    time.sleep(.5)
+    time.sleep(.1)
 
 # Close the window and quit.
 pygame.quit()
